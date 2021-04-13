@@ -1,0 +1,10 @@
+<h1 id="reliabletxt---the-reliable-text-file-format">ReliableTXT - The Reliable Text File Format</h1>
+<h2 id="specification">Specification</h2>
+<p>Version 0.5.0 - April 11, 2021</p>
+<p><a href="https://www.reliabletxt.com">https://www.reliabletxt.com</a></p>
+<p>© Stefan John / Stenway</p>
+<h3 id="preface">Preface</h3>
+<p>Reading arbitrary text files, without knowledge about how they were written, is an ambiguous process. Without knowing the exact encoding scheme and line break convention, that was used to write the text file, assumptions have to be made during the reading process. These assumptions however introduce an uncertainty, that the text file could be falsely read and therefor data could be misinterpreted.</p>
+<p>Especially text files that use an encoding, which does not have a defined preamble or omits its preamble, cause problems when reading their content. In such cases an algorithm has to go over the data and guess which encoding might have been used. Also problematic are encodings, that don&#39;t have clearly distinguishable preambles, and therefor as well an algorithm has to try to determine the used encoding.</p>
+<p>Another source of uncertainty is the used line break convention. Several varieties of single characters or character sequences exist, that indicate a line break or end of line. Sometimes even multiple line break conventions occur mixed together in a single text file.</p>
+<p>The Reliable Text File Format addresses these problems and defines rules that allow reading Reliable Text Files without uncertainty and</p>

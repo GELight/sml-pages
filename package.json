@@ -1,0 +1,41 @@
+{
+  "name": "@gelight/sml-pages",
+  "private": false,
+  "version": "0.0.1",
+  "description": "Simple Markup Language - Documentation Pages",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GELight/sml-pages.git"
+  },
+  "keywords": [
+    "ReliableTxt",
+    "WhitespaceSV",
+    "SimpleML",
+    "SML",
+    "Simple",
+    "Markup",
+    "Language"
+  ],
+  "author": "Mario Linz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GELight/sml-pages/issues"
+  },
+  "homepage": "https://github.com/GELight/sml-pages#readme",
+  "scripts": {
+    "dev": "nodemon --watch 'src/**/*.ts' npm run build",
+    "build": "tsc && node dist/index.js",
+    "test:unit": "tsc && jest --coverage",
+    "release": "RELEASE_VERSION=$npm_package_version ./build-release.sh"
+  },
+  "devDependencies": {
+    "@gelight/sml": "^0.1.2",
+    "@gelight/sml-page-builder": "0.0.1",
+    "@types/node": "^14.14.37",
+    "nodemon": "^2.0.7",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  },
+  "types": "types.d.ts"
+}
