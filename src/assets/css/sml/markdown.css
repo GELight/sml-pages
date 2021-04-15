@@ -1,0 +1,33 @@
+.markdown h1 {
+    font-weight: 400;
+    font-size: var(--sml-headline-1);
+    color: var(--white);
+    margin: 0;
+}
+
+.markdown h2 {
+    font-weight: 400;
+    font-size: var(--sml-headline-2);
+    border-bottom: 1px solid var(--colors-bluegray-50);
+    padding: var(--gap-md) 0;
+    margin: 0;
+    color: var(--white);
+}
+
+.markdown h3 {
+    font-weight: 400;
+    font-size: var(--sml-headline-3);
+    padding: var(--gap-xl) 0 var(--gap-md) 0;
+    margin: 0;
+    color: var(--white);
+}
+
+.markdown code {
+    padding: var(--gap-md);
+    color: var(--colors-bluegray-800);
+    background: var(--colors-bluegray-50);
+    box-shadow: var(--shadow-1);
+    font-size: 11px;
+    font-family: monospace;
+    text-shadow: none;
+}

@@ -1,6 +1,6 @@
 {
     "watch": ["src/**/*.ts", "src/**/*.sml"],
     "ignore": ["src/**/*.spec.ts"],
-    "ext": "ts js json",
-    "exec": "tsc && npm run build"
+    "ext": "ts js json sml",
+    "exec": "npm run build"
 }

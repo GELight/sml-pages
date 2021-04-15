@@ -1,13 +1,21 @@
-import { CustomTagIncludeGithubMarkdownFile, CustomTagText, SmlPageBuilder } from "@gelight/sml-page-builder";
+import {
+    CustomTagIncludeGithubMarkdownFile,
+    CustomTagSlot,
+    CustomTagText,
+    SmlPageBuilder
+} from "@gelight/sml-page-builder";
 import * as path from "path";
 
 const PATH = path.resolve(__dirname, "..", "src", "reliabletxt.com");
+const ASSETS_PATH = path.resolve(__dirname, "..", "src", "assets");
 const OUTPUT_PATH = path.resolve(__dirname, "pages", "reliabletxt.com");
 
 new SmlPageBuilder()
-    .setChildrenElementName("Children")
+    .setChildrenElementName("Childs")
+    .setAssetsPath(ASSETS_PATH)
     .setPagesPath(PATH)
     .setOutputPath(OUTPUT_PATH)
     .registerCustomTag("Text", CustomTagText)
-    .registerCustomTag("Include", CustomTagIncludeGithubMarkdownFile)
+    .registerCustomTag("Slot", CustomTagSlot)
+    .registerCustomTag("IncludeGithubMarkdownFile", CustomTagIncludeGithubMarkdownFile)
     .build();
