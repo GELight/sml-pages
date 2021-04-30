@@ -11,7 +11,6 @@ const ASSETS_PATH = path.resolve(__dirname, "..", "src", "assets");
 const OUTPUT_PATH = path.resolve(__dirname, "pages", "reliabletxt.com");
 
 new SmlPageBuilder()
-    .setChildrenElementName("Childs")
     .setAssetsPath(ASSETS_PATH)
     .setPagesPath(PATH)
     .setOutputPath(OUTPUT_PATH)
